@@ -1,4 +1,4 @@
-pub fn hi() {
+pub fn hello() {
     println!("Hi, world!!!!!!!!");
 }
 
