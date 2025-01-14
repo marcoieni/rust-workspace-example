@@ -1,5 +1,5 @@
 pub fn hello() {
-    println!("Hi, world!!!!!!!!");
+    println!("Hi, world!!!!!!!");
 }
 
 #[cfg(test)]
