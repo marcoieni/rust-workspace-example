@@ -8,6 +8,7 @@ git_release_body = """
 {% endfor %}
 {% endif %}
 """
+allow_dirty = true
 
 [[package]] # the double square brackets define a TOML table array
 name = "marco-test-two" # name of the package to configure
