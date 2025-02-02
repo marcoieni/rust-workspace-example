@@ -1,5 +1,5 @@
 pub fn hello_breaking_2() {
-    println!("Hello world!!!!");
+    println!("Hello world!!");
 }
 
 #[cfg(test)]
