@@ -44,7 +44,7 @@ body = """
                     ({% for link in commit.links %}[{{link.text}}]({{link.href}}) {% endfor -%})\
                 {% endif %}
         {% else -%}
-            - {% if commit.breaking %}[**breaking**] {% endif %}{{ commit.message }}{{ self::username(commit=commit) }}{{ self::pr(commit=commit) }}
+            - {% if commit.breaking %}[**breaking**] {% endif %}{{ commit.message }}
         {% endif -%}
     {% endfor -%}
 {% endfor %}
