@@ -51,12 +51,6 @@ body = """
     {% endfor -%}
 {% endfor %}
 # highlight-start
-{%- if remote.contributors %}
-### Contributors
-{% for contributor in remote.contributors %}
-    * @{{ contributor.username }}
-{%- endfor %}
-{% endif -%}
 {%- macro username(commit) -%}
     {% if commit.remote.username %} (by @{{ commit.remote.username }}){% endif -%}
 {% endmacro -%}
