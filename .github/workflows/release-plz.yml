@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      # Required for OIDC token exchange
+      id-token: write
     steps:
       # No need to checkout the whole history in `release`.
       - name: Checkout repository
