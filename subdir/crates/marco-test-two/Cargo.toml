@@ -1,6 +1,6 @@
 [package]
 name = "marco-test-two"
-version = "0.5.11"
+version = "0.5.12"
 edition = "2021"
 description = "just a test for release-plz"
 license = "MIT OR Apache-2.0"
