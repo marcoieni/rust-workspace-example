@@ -37,34 +37,34 @@ jobs:
 
   # With concurrency block, because we want to prevent
   # PRs from being created concurrently.
-  release-plz-pr:
-    name: Release-plz PR
-    permissions:
-      contents: write
-      pull-requests: write
-    runs-on: ubuntu-latest
-    concurrency:
-      group: release-plz-${{ github.ref }}
-      cancel-in-progress: false
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Install Rust toolchain
-        uses: dtolnay/rust-toolchain@stable
-      - uses: Swatinem/rust-cache@v2 # experimental
-        with:
-          workspaces: "subdir -> subdir/target"
-      - name: Run release-plz
-        id: release-plz
-        uses: MarcoIeni/release-plz-action@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          command: release-pr
-          project_manifest: subdir/Cargo.toml
-          verbose: true
+  # release-plz-pr:
+  #   name: Release-plz PR
+  #   permissions:
+  #     contents: write
+  #     pull-requests: write
+  #   runs-on: ubuntu-latest
+  #   concurrency:
+  #     group: release-plz-${{ github.ref }}
+  #     cancel-in-progress: false
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+  #     - name: Install Rust toolchain
+  #       uses: dtolnay/rust-toolchain@stable
+  #     - uses: Swatinem/rust-cache@v2 # experimental
+  #       with:
+  #         workspaces: "subdir -> subdir/target"
+  #     - name: Run release-plz
+  #       id: release-plz
+  #       uses: MarcoIeni/release-plz-action@main
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #       with:
+  #         command: release-pr
+  #         project_manifest: subdir/Cargo.toml
+  #         verbose: true
       # - name: Read release output
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
