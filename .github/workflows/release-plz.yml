@@ -24,8 +24,6 @@ jobs:
       - &install-rust
         name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
-      - uses: rust-lang/crates-io-auth-action@v1
-        id: auth
       - name: Run release-plz
         id: release-plz
         uses: release-plz/action@trusted-publishing-impl
