@@ -1,6 +1,6 @@
 [package]
 name = "marco-test-one"
-version = "0.3.26"
+version = "0.3.27"
 edition = "2021"
 description = "marco-test-one"
 license = "MIT OR Apache-2.0"
