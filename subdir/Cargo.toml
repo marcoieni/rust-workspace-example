@@ -6,4 +6,4 @@ members = [
 
 [workspace.dependencies]
 serde = "1.0.164"
-marco-test-one = { path = "crates/marco-test-one", version = "0.3.27" }
+marco-test-one = { path = "crates/marco-test-one", version = "0.3.28" }
