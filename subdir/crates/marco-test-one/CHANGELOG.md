@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.28](https://github.com/marcoieni/rust-workspace-example/compare/marco-test-one-v0.3.27...marco-test-one-v0.3.28) - 2025-09-13
+
+### Other
+
+- edit lib file once again
+
 ## [0.3.27](https://github.com/marcoieni/rust-workspace-example/compare/marco-test-one-v0.3.26...marco-test-one-v0.3.27) - 2025-09-12
 
 ### Other
