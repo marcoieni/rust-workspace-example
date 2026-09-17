@@ -1,5 +1,5 @@
 pub fn hello_breaking_2() {
-    println!("Hello world!!! PR3068 refreshed fixture");
+    println!("Hello world!!! PR3068 feature fixture");
 }
 
 #[cfg(test)]
